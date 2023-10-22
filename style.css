@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  /* font-family: 'Sometype Mono', monospace; */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+:root {
+  --primary-green: rgba(36, 138, 11, 1);
+  --grey: rgba(217, 217, 217, 1);
+  --blue: rgba(0, 98, 209, 1);
+  --blue-light: rgba(0, 98, 209, 0.4);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--grey);
+  height: 100%;
+}
+
+.font-large {
+  font-size: 2rem;
+  margin: 0;
+}
+.font-medium {
+  font-size: 1.5rem;
+}
+.font-we-medium {
+  font-weight: bold;
+}
+.font-we-heavy {
+  font-weight: bolder;
+}
+.line {
+  height: 1px;
+  background-color: var(--blue);
+  content: ' ';
+}
+/* navbara */
+.nav {
+  display: flex;
+  padding: 20px 40px;
+  justify-content: space-between;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-logo span {
+  color: var(--blue);
+  font-weight: normal;
+  font-size: 2.5rem;
+  text-shadow: 0px 3px darkgray;
+}
+.routes {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.routes a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 7px;
+}
+.routes a span {
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+  /* font-weight: bold; */
+}
+.login {
+  background-color: var(--blue);
+  color: white;
+  border-radius: 9px;
+  padding: 8px 10px;
+  text-align: center;
+
+  &:hover {
+    background-color: var(--blue-light);
+    color: black;
+  }
+}
+.btn-border-blue {
+  border: 3px solid var(--blue);
+  border-radius: 5px;
+  padding: 5px;
+  &:hover {
+    background-color: var(--blue);
+    color: white;
+  }
+}
+
+/* pagefront */
+.page-front {
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 0;
+}
+/* .page-front .left {
+  display: flex;
+  flex-direction: column;
+} */
+.page-front span {
+  color: var(--blue);
+}
+.page-front .heading-large {
+  width: 290px;
+}
+.page-front a {
+  text-align: center;
+}
+.page-front .heading-small {
+  width: 230px;
+}
+.page-front .rating-details {
+  display: flex;
+  background-color: var(--blue);
+  color: white;
+  justify-content: space-around;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+.page-front .rating-details p {
+  margin: 15px 0;
+  text-align: center;
+}
+
+/* help section */
+.help {
+  display: flex;
+  flex-direction: column;
+  margin: 0 100px;
+}
+.help-clients {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.help-clients div {
+  height: 70vh;
+  width: 20vw;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+}
+.clients-img {
+  display: flex;
+  justify-content: space-around;
+}
+.clients-img div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
